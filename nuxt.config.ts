@@ -8,6 +8,6 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     'shadcn-nuxt',
-    '@nuxtjs/tailwindcss'
-  ]
-})
+    '@nuxtjs/tailwindcss',
+  ],
+});
