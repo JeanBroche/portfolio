@@ -1,4 +1,5 @@
 export interface Star {
+  key: number,
   position: {
     x: number; // 0 to 100, percentage of the width of the screen
     y: number; // 0 to 100, percentage of the height of the screen

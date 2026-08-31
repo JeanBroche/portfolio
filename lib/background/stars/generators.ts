@@ -1,4 +1,4 @@
-import { Star } from './types';
+import { type Star } from './types';
 import { STAR_SIZE, STAR_FLICKER_SPEED } from './constants';
 
 function generateStar(): Star {
@@ -13,6 +13,7 @@ function generateStar(): Star {
     STAR_FLICKER_SPEED.MIN;
 
   return {
+    key: Date.now() + Math.random(),
     position,
     size,
     brightness,

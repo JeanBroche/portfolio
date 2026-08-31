@@ -6,8 +6,8 @@ const STAR_SIZE = {
 
 // Star flicker speed range in seconds
 const STAR_FLICKER_SPEED = {
-  MIN: 0.1,
-  MAX: 0.5,
+  MIN: 2,
+  MAX: 8,
 };
 
 export { STAR_SIZE, STAR_FLICKER_SPEED };
