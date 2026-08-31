@@ -12,6 +12,7 @@ const config: Config = {
     extend: {
       colors: {
         'night-sky-primary': '#0B0C1A',
+        'water-accent': '#1b1d40'
       },
     },
   },
