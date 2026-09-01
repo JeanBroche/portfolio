@@ -1,4 +1,4 @@
-interface Building {
+export interface BuildingAttributes {
   key: number,
   width: number,
   height: number,
@@ -12,4 +12,9 @@ interface Building {
     width: number,
     xPosition: number,
   },
+}
+
+export interface BuildingInterface {
+  props: BuildingAttributes,
+  render(): void,
 }
