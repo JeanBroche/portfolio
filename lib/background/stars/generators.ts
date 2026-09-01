@@ -1,16 +1,15 @@
+import { generateRandomNumber } from '../../utils';
 import { type Star } from './types';
 import { STAR_SIZE, STAR_FLICKER_SPEED } from './constants';
 
 function generateStar(): Star {
   const position = {
-    x: Math.random() * 100,
-    y: Math.random() * 100,
+    x: generateRandomNumber(0, 100),
+    y: generateRandomNumber(0, 100),
   };
-  const size = Math.random() * (STAR_SIZE.MAX - STAR_SIZE.MIN) + STAR_SIZE.MIN;
-  const brightness = Math.random() * 100;
-  const flickerSpeed =
-    Math.random() * (STAR_FLICKER_SPEED.MAX - STAR_FLICKER_SPEED.MIN) +
-    STAR_FLICKER_SPEED.MIN;
+  const size = generateRandomNumber(STAR_SIZE.MIN, STAR_SIZE.MAX);
+  const brightness = generateRandomNumber(0, 100);
+  const flickerSpeed = generateRandomNumber(STAR_FLICKER_SPEED.MIN, STAR_FLICKER_SPEED.MAX);
 
   return {
     key: Date.now() + Math.random(),
